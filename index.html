@@ -1,0 +1,124 @@
+<!--Declares to the browser this is an HTML document.-->
+<!DOCTYPE html>
+<!--Start the HTML page and sets the lang to English-->
+<html lang="en">
+<!--Head tag is used to include the meta tags 
+    and links to the javaScript code page.-->
+    <head>
+        <!--Title of the tab at the top of the page-->
+        <title>Space Casino</title>
+        <!--Add a space background-->
+        <!--CSS information here-->
+    <style>
+        /*this will add style in the html document*/
+        body { /*this is the opening scope operator*/
+            /*this will set the background image to the space.jpg image*/
+            background-image: url("space.jpg");
+            /*this keeps the background from repeating*/
+            background-repeat: no-repeat;
+            /*this keeps background from scrolling, when you scroll text on top*/
+            background-attachment: fixed;
+            /*this tag set the color of all the text in the body*/
+            color: white;
+            /*this tag centers all the text in the body*/
+            text-align: center;
+        } /*this is the closing cope operator*/
+
+        h1 { /*this is the opening scope operator*/
+            /*this centers the text of the h1 tag*/
+            text-align: center;
+            /*this sets the size of the text to 75px*/
+            font-size: 75px;
+        }
+        
+        h2 { /*this is the opening scope operator*/
+            /*this centers the text of the h2 tag*/
+            text-align: center;
+            /*this set the size of the text to 50px*/
+            font-size: 50px;
+        }
+
+        p { /*this is the opening scope operator*/
+            /*this aligns the text to the left side of the page*/
+            text-align: left;
+            /*this changes the size of the text to x-large*/
+            font-size: x-large;
+        }
+
+        #theFinalCountdown { /*this is the opening scope operator*/
+            /*this aligns theFinalCountdown content to the center of the page*/
+            text-align: center;
+            /*this changes the font size to xx-large*/
+            font-size: xx-large;
+        }
+
+        button {  /*this is the opening scope operator*/
+            /*this changes the background color of the button to white */
+            background-color: white;
+            /*this makes the text on the button green*/
+            color: green;
+            /*this makes the button have no border*/
+            border: none;
+            /*this sets the space within the button element*/
+            padding: 15px 32px;
+            /*this aligns text within the buttton to the center*/
+            text-align: center;
+            /*this takes away decorative lines from the text*/
+            text-decoration: none;
+            /*this displays this as an inline-level block container*/
+            display: inline-block;
+            /*this sets the font size in the button to 16px*/
+            font-size: 16px;
+            /*this sets the margin to 4x2px*/
+            margin: 4px 2px;
+            /*this turns the cursor into a pointer when you interact with the button*/
+            cursor: pointer;
+            /*this sets the border radius to 42px*/
+            border-radius: 42px;
+            /*this makes the text bold*/
+            font-weight: bold;
+            /*this aligns the button to the center*/
+            align-self: center;
+        }
+
+        button:hover { /*this is the opening scope operator*/
+            background-color: transparent;
+            border: 2px solid #4CAF50;
+            color: white;
+        }
+    </style>        
+        <!--links to the javaScript code page-->
+        <script src="JavaScriptCode.js">      
+        </script> 
+    </head>
+    <!--Body tag is used to include the background image and 
+        the text for the header of the page.-->
+    <body>
+        <!--the h1 tag is the largest header of the 6-->
+        <h1>Space Casino</h1>
+        <!--the h2 tag is the second largest header of the 6-->
+        <h2>Where the odds are in your favor</h2>
+        <!--this does an image search with in the local document-->
+        <!--the width sets the horizontal length of the image-->
+        <!--the height sets the vertical length of the image-->
+        <img src="insidecasino.jpg" alt="Inside Casino" width="500" height="333">
+        <!--the script tag tells the html document that we will be coding in JS-->
+        <script>
+            //this calls the displayWelcome function
+            displayWelcome();
+            //this calls the displayInstructions function
+            displayInstructions();
+            //this sets the main heading for the page as "Space Game"
+            document.write("Space Game");
+            //this adds 3 line breaks
+            document.write("<br/><br/><br/>");
+            //this calls the play function
+            play();
+            //this closes the JS section
+        </script>
+        <!--this adds 3 linebreaks-->
+        <br/><br/><br/>
+    <!--this closes the body tag-->
+    </body>
+<!--this closes the html tag-->
+</html>
